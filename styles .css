@@ -1,0 +1,635 @@
+I'll provide you with a complete set of codes to create a simple but professional-looking website for Kaizen Glass Vases on GitHub. This will include all the necessary HTML, CSS, and JavaScript files, which you can directly copy and use.
+
+## Step 1: Create your GitHub repository
+
+First, create a repository named `username.github.io` (replace "username" with your GitHub username).
+
+## Step 2: Create these files in your repository
+
+### 1. index.html (Main Homepage)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaizen Glass Vases</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar Navigation -->
+        <div class="sidebar">
+            <div class="logo">
+                <h1>KAIZEN</h1>
+                <p>Artisanal Glass</p>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="collections.html"><i class="fas fa-wine-glass-alt"></i> Collections</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="content">
+            <header>
+                <h1>Artistry in Glass</h1>
+                <p>Handcrafted excellence since 2005</p>
+            </header>
+            
+            <section class="hero">
+                <div class="hero-text">
+                    <h2>Transform Your Space</h2>
+                    <p>Our exquisite glass vases blend tradition and innovation, creating unique centerpieces for your home.</p>
+                    <a href="collections.html" class="btn">Explore Collections</a>
+                </div>
+            </section>
+
+            <section class="featured">
+                <h2>Featured Collections</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1612196808214-b7e239e5f8f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')"></div>
+                        <h3>Aurora Series</h3>
+                        <p>Inspired by the northern lights, these vases capture the elusive dance of color and light.</p>
+                    </div>
+                    <div class="product">
+                        <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1578913685467-79fae4b850b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')"></div>
+                        <h3>Zen Collection</h3>
+                        <p>Minimalist designs that embody the essence of tranquility and harmony.</p>
+                    </div>
+                    <div class="product">
+                        <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1601459581060-55a3f2e2ab37?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')"></div>
+                        <h3>Oceanic Wave</h3>
+                        <p>Flowing forms and aquatic hues reminiscent of the sea's eternal movement.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="craftsmanship">
+                <h2>Our Craftsmanship</h2>
+                <div class="craft-content">
+                    <div class="craft-text">
+                        <p>Each Kaizen vase is meticulously handcrafted by master glassblowers who have perfected their art through years of dedication. We combine traditional techniques with contemporary design to create pieces that are both timeless and modern.</p>
+                        <p>Our commitment to continuous improvement—the philosophy of "Kaizen"—ensures that every piece exceeds expectations and stands as a testament to exceptional craftsmanship.</p>
+                        <a href="about.html" class="btn">Learn More</a>
+                    </div>
+                    <div class="craft-image" style="background-image: url('https://images.unsplash.com/photo-1615529328331-f8917597711f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Kaizen Glass</h3>
+                <p>Elevating spaces through artisanal glass creations</p>
+                <p>&copy; 2025 Kaizen Glass. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
+
+### 2. about.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Kaizen Glass Vases</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar Navigation -->
+        <div class="sidebar">
+            <div class="logo">
+                <h1>KAIZEN</h1>
+                <p>Artisanal Glass</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="active"><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="collections.html"><i class="fas fa-wine-glass-alt"></i> Collections</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="content">
+            <header>
+                <h1>About Kaizen Glass</h1>
+                <p>Our story, our passion</p>
+            </header>
+            
+            <section class="about-section">
+                <div class="about-image" style="background-image: url('https://images.unsplash.com/photo-1532634922-8fe0b757fb13?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')"></div>
+                
+                <div class="about-text">
+                    <h2>Our Journey</h2>
+                    <p>Founded in 2005, Kaizen Glass began as a small workshop dedicated to preserving the ancient art of glassblowing while infusing it with contemporary design sensibilities.</p>
+                    
+                    <p>The name "Kaizen" reflects our philosophy of continuous improvement—each piece we create benefits from the knowledge and experience gained from all that came before it.</p>
+                    
+                    <p>What started as a passion project by master glassblower Hiroshi Tanaka has grown into an internationally recognized studio of artisans dedicated to pushing the boundaries of glass art.</p>
+                </div>
+            </section>
+            
+            <section class="values-section">
+                <h2>Our Values</h2>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <i class="fas fa-star"></i>
+                        <h3>Excellence</h3>
+                        <p>We strive for perfection in every piece we create, paying meticulous attention to detail.</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Sustainability</h3>
+                        <p>Our processes minimize environmental impact while maximizing the beauty of natural materials.</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-palette"></i>
+                        <h3>Innovation</h3>
+                        <p>We continuously explore new techniques and designs while honoring traditional craftsmanship.</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-hands-helping"></i>
+                        <h3>Community</h3>
+                        <p>We support arts education and collaborate with local artists to foster creativity.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="team-section">
+                <h2>Our Artisans</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-image" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')"></div>
+                        <h3>Hiroshi Tanaka</h3>
+                        <p>Founder & Master Glassblower</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image" style="background-image: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')"></div>
+                        <h3>Sofia Garcia</h3>
+                        <p>Lead Designer</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image" style="background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')"></div>
+                        <h3>Michael Chen</h3>
+                        <p>Glass Artist</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Kaizen Glass</h3>
+                <p>Elevating spaces through artisanal glass creations</p>
+                <p>&copy; 2025 Kaizen Glass. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
+
+### 3. contact.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Kaizen Glass Vases</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar Navigation -->
+        <div class="sidebar">
+            <div class="logo">
+                <h1>KAIZEN</h1>
+                <p>Artisanal Glass</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="collections.html"><i class="fas fa-wine-glass-alt"></i> Collections</a></li>
+                    <li class="active"><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="content">
+            <header>
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you</p>
+            </header>
+            
+            <section class="contact-section">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>We welcome your inquiries, feedback, and custom orders. Our team is ready to assist you with any questions about our collections or services.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Visit Our Studio</h3>
+                                <p>123 Artisan Way<br>Glasstown, CA 90210<br>United States</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Call Us</h3>
+                                <p>+1 (555) 123-4567</p>
+                                <p>Monday - Friday: 9am - 5pm PST</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p>info@kaizenglass.com</p>
+                                <p>sales@kaizenglass.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Send a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </section>
+            
+            <section class="map-section">
+                <h2>Find Us</h2>
+                <div class="map-container">
+                    <!-- Replace with an actual map embed code in a real implementation -->
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Interactive Map Would Be Embedded Here</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Kaizen Glass</h3>
+                <p>Elevating spaces through artisanal glass creations</p>
+                <p>&copy; 2025 Kaizen Glass. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
+
+### 4. collections.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections - Kaizen Glass Vases</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar Navigation -->
+        <div class="sidebar">
+            <div class="logo">
+                <h1>KAIZEN</h1>
+                <p>Artisanal Glass</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li class="active"><a href="collections.html"><i class="fas fa-wine-glass-alt"></i> Collections</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="content">
+            <header>
+                <h1>Our Collections</h1>
+                <p>Explore our handcrafted glass vases</p>
+            </header>
+            
+            <section class="collection-filters">
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">All Collections</button>
+                    <button class="filter-btn" data-filter="aurora">Aurora</button>
+                    <button class="filter-btn" data-filter="zen">Zen</button>
+                    <button class="filter-btn" data-filter="oceanic">Oceanic</button>
+                    <button class="filter-btn" data-filter="modern">Modern</button>
+                </div>
+            </section>
+            
+            <section class="collection-grid">
+                <!-- Aurora Collection -->
+                <div class="collection-item aurora">
+                    <div class="collection-image" style="background-image: url('https://images.unsplash.com/photo-1612196808214-b7e239e5f8f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="collection-info">
+                        <h3>Aurora Borealis Vase</h3>
+                        <p>Swirling colors reminiscent of the northern lights dance across this elegant tall vase.</p>
+                        <span class="price">$249</span>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="collection-item aurora">
+                    <div class="collection-image" style="background-image: url('https://images.unsplash.com/photo-1587377399886-5c5eb399100b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="collection-info">
+                        <h3>Aurora Sunset Bowl</h3>
+                        <p>Wide-mouthed bowl with warm sunset hues perfect for floral arrangements.</p>
+                        <span class="price">$189</span>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Zen Collection -->
+                <div class="collection-item zen">
+                    <div class="collection-image" style="background-image: url('https://images.unsplash.com/photo-1578913685467-79fae4b850b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="collection-info">
+                        <h3>Zen Garden Vase</h3>
+                        <p>Minimalist design with subtle sand-like textures inspired by Japanese rock gardens.</p>
+                        <span class="price">$175</span>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="collection-item zen">
+                    <div class="collection-image" style="background-image: url('https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="collection-info">
+                        <h3>Zen Meditation Vessel</h3>
+                        <p>Perfectly balanced proportions create a sense of calm and tranquility.</p>
+                        <span class="price">$210</span>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Oceanic Collection -->
+                <div class="collection-item oceanic">
+                    <div class="collection-image" style="background-image: url('https://images.unsplash.com/photo-1601459581060-55a3f2e2ab37?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="collection-info">
+                        <h3>Ocean Wave Vase</h3>
+                        <p>Undulating forms capture the motion of ocean waves in this statement piece.</p>
+                        <span class="price">$295</span>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="collection-item oceanic">
+                    <div class="collection-image" style="background-image: url('https://images.unsplash.com/photo-1592136957897-b2b6ca21e10d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="collection-info">
+                        <h3>Coral Reef Decanter</h3>
+                        <p>Intricate detailing reminiscent of coral formations in vibrant aquatic hues.</p>
+                        <span class="price">$320</span>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Modern Collection -->
+                <div class="collection-item modern">
+                    <div class="collection-image" style="background-image: url('https://images.unsplash.com/photo-1587304671259-5ccb75111bca?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="collection-info">
+                        <h3>Geometric Prism Vase</h3>
+                        <p>Bold angles and clean lines define this contemporary architectural piece.</p>
+                        <span class="price">$230</span>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="collection-item modern">
+                    <div class="collection-image" style="background-image: url('https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="collection-info">
+                        <h3>Urban Cylinder Set</h3>
+                        <p>Set of three graduated cylinders with a metropolitan-inspired color palette.</p>
+                        <span class="price">$275</span>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="custom-orders">
+                <div class="custom-content">
+                    <div class="custom-text">
+                        <h2>Custom Commissions</h2>
+                        <p>Looking for something uniquely yours? Our artisans can create bespoke glass pieces tailored to your specifications and vision.</p>
+                        <p>Perfect for special occasions, corporate gifts, or creating that exact piece you've been envisioning for your space.</p>
+                        <a href="contact.html" class="btn">Inquire Now</a>
+                    </div>
+                    <div class="custom-image" style="background-image: url('https://images.unsplash.com/photo-1610701596061-2ecf227e85b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Kaizen Glass</h3>
+                <p>Elevating spaces through artisanal glass creations</p>
+                <p>&copy; 2025 Kaizen Glass. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
+
+### 5. styles.css
+
+```css
+/* Base Styles and Variables */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #d35400;
+    --accent-color: #3498db;
+    --text-color: #333;
+    --light-text: #f8f9fa;
+    --border-color: #ddd;
+    --background-color: #f8f5f2;
+    --sidebar-width: 250px;
+    --header-height: 60px;
+    --transition-speed: 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    background-image: url('https://www.transparenttextures.com/patterns/old-paper.png');
+    background-attachment: fixed;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(ellipse at center, rgba(255,235
